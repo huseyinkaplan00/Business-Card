@@ -1,0 +1,106 @@
+@media only screen and (max-width: 768px) {
+
+
+    body {
+        transform: none !important;
+        background-color: black;
+
+    }
+
+
+
+    .flexContainer {
+
+        img {
+            display: block;
+            width: 250px !important;
+            height: 250px !important;
+            object-fit: cover;
+            object-position: -94px !important;
+            margin: 0 !important;
+            margin-bottom: 10px !important;
+
+        }
+
+        .cardContainer {
+            width: 75% !important;
+            height: 75% !important;
+            max-width: 50px;
+            flex-direction: column;
+
+            &.border {
+
+                --border-width: 10px !important;
+
+            }
+
+            .content {
+                margin-bottom: 15px;
+
+                h1 {
+                    font-size: 9vw !important;
+                    white-space: nowrap;
+                    text-align: center !important;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 5vw !important;
+                    text-align: center !important;
+                    margin: 0 !important;
+
+
+
+                }
+
+                h3 {
+                    font-size: 3vw !important;
+                    text-align: center !important;
+                    margin-bottom: 5px !important;
+                }
+
+                hr {
+                    margin-top: 27px !important;
+                    border: none;
+                    height: 0.5px;
+                    background: #e5e5e5;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                }
+
+            }
+        }
+
+        .social {
+            text-align: center;
+            display: flex !important;
+            align-items: center !important;
+            margin-bottom: 49px;
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px !important;
+                transform: scale(1.5);
+                margin: 0 15px !important;
+                height: 23px !important;
+                width: 23px !important;
+                border-radius: 100%;
+                transition: .5s ease-in-out;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+
+}

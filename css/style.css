@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@media only screen and (max-width: 768px) {
+  body {
+    transform: none !important;
+    background-color: black;
+  }
+  .flexContainer img {
+    display: block;
+    width: 250px !important;
+    height: 250px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -94px !important;
+       object-position: -94px !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .flexContainer .cardContainer {
+    width: 75% !important;
+    height: 75% !important;
+    max-width: 50px;
+    flex-direction: column;
+  }
+  .flexContainer .cardContainer.border {
+    --border-width: 10px !important;
+  }
+  .flexContainer .cardContainer .content {
+    margin-bottom: 15px;
+  }
+  .flexContainer .cardContainer .content h1 {
+    font-size: 9vw !important;
+    white-space: nowrap;
+    text-align: center !important;
+    position: relative;
+  }
+  .flexContainer .cardContainer .content h2 {
+    font-size: 5vw !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  .flexContainer .cardContainer .content h3 {
+    font-size: 3vw !important;
+    text-align: center !important;
+    margin-bottom: 5px !important;
+  }
+  .flexContainer .cardContainer .content hr {
+    margin-top: 27px !important;
+    border: none;
+    height: 0.5px;
+    background: #e5e5e5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .flexContainer .social {
+    text-align: center;
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 49px;
+  }
+  .flexContainer .social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px !important;
+    transform: scale(1.5);
+    margin: 0 15px !important;
+    height: 23px !important;
+    width: 23px !important;
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+  }
+  .flexContainer .social i:hover {
+    opacity: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Serif Display", serif;
+  transform: scale(2.5);
+  overflow: hidden;
+  background: linear-gradient(-45deg, #f7ebec, #1d1e2c, #696773, #d3d5d7);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flexContainer img {
+  border-radius: 50%;
+  width: 35%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -50px;
+     object-position: -50px;
+  margin-right: 30px;
+  transform: translatey(0px);
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+@-webkit-keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-23px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(5px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-23px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(5px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+.flexContainer .cardContainer {
+  background: linear-gradient(-45deg, #8367C7, #5603AD);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+  border-radius: 4px;
+  padding: 20px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  justify-content: space-around;
+  color: #f0fff1;
+}
+.flexContainer .cardContainer.border {
+  --border-width: 4px;
+  position: relative;
+}
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.flexContainer .cardContainer.border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, hsl(224deg, 85%, 66%), hsl(269deg, 85%, 66%), hsl(314deg, 85%, 66%), hsl(359deg, 85%, 66%), hsl(44deg, 85%, 66%), hsl(89deg, 85%, 66%), hsl(134deg, 85%, 66%), hsl(179deg, 85%, 66%));
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  -webkit-animation: moveGradient 4s alternate infinite;
+          animation: moveGradient 4s alternate infinite;
+}
+.flexContainer .cardContainer h1 {
+  font-size: 2vw;
+  white-space: nowrap;
+  line-height: 1px;
+  position: relative;
+}
+.flexContainer .cardContainer h2 {
+  font-size: 1vw;
+  text-align: right;
+}
+.flexContainer .cardContainer h2:hover {
+  -webkit-animation: wiggle 2s linear infinite;
+          animation: wiggle 2s linear infinite;
+}
+@-webkit-keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+.flexContainer .cardContainer h3 {
+  font-size: 0.6vw;
+  text-align: right;
+}
+.flexContainer .cardContainer hr {
+  border: none;
+  height: 0.5px;
+  background: #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.flexContainer .social {
+  text-align: center;
+}
+.flexContainer .social i {
+  margin: 5px;
+  cursor: pointer;
+  background: #5603ad;
+  padding: 5px;
+  height: 15px;
+  border-radius: 100%;
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
+}
+.flexContainer .social i:hover {
+  opacity: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}/*# sourceMappingURL=style.css.map */
